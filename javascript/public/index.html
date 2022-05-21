@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Todo (JavaScript)</title>
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" id="todoInput" placeholder="Enter todo task here" />
+                </div>
+                <button id="addBtn">Add</button>
+            </div>
+            <div class="list-section" id="todoList"></div>
+        </div>
+        <template id="list-item-template">
+            <div class="list-item">
+                <input type="checkbox" class="done-check" />
+                <div class="list-title"></div>
+                <button class="list-delete">x</button>
+            </div>
+        </template>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
